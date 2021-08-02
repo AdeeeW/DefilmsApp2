@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adewijayanto.defilmsapp2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_d"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_d"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DefilmsApp2"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.detailtvshow.DetailTvShowActivity"
+            android:parentActivityName=".ui.detailtvshow.DetailTvShowActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.detailtvshow.DetailTvShowActivity" />
+        </activity>
+        <activity android:name=".ui.detailmovie.DetailMovieActivity"
+            android:parentActivityName=".ui.detailmovie.DetailMovieActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.detailmovie.DetailMovieActivity" />
+        </activity>
+        <activity android:name=".ui.settings.SettingsActivity"
+            android:parentActivityName=".ui.settings.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.settings.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".ui.splashscreen.SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.home.HomeActivity" />
+    </application>
+
+</manifest>
